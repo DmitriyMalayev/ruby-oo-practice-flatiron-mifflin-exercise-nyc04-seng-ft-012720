@@ -1,10 +1,10 @@
 require_relative "lib/Manager"
 require_relative "lib/Employee"
-require 'pry'
 
+dmitriy = Employee.new("dmitriy", 100000, "annie") 
+firuz = Employee.new("firuz", 100000, "jack")  
 
-#Test your code here
+annie = Manager.new("annie", "engineering", 20, dmitriy)
+jack = Manager.new("jack", "management", 21, firuz) 
 
-
-binding.pry
-puts "done"
+puts Employee.paid_over(100) 
